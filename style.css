@@ -1,0 +1,329 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans&display=swap');
+
+html {
+    max-width: 920px;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    color: #fefefe;
+}
+
+body {
+    text-align: center;
+    justify-content: center;
+    font-family: arial, sans-serif;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: url("yourvideo.mp4") no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/*Formatação Header*/
+header {
+    border-bottom: 1px #606060 solid;
+    height: 100px;
+}
+
+#cabecalho-title {
+    
+    font-size: 12pt;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 2px rgb(255, 0, 0);
+    padding: 10px;
+    margin-bottom: auto;
+    flex-direction: column;
+    line-height: 7px;
+}
+
+.site-title {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 29pt;
+    transition: all 0.5s ease-in-out;
+}
+
+.site-title {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 29pt;
+    animation: bounce 1s;
+}
+
+.img-logo {
+    border-radius: 50%;
+    width: 90px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: -10px;
+}
+
+.menu {
+    float: right;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.menu a {
+    color: #fefefe;
+    text-decoration: none;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+
+/*Fim formatação Header*/
+/*Formatação Inicio*/
+.sobre {
+    height: 70vh;
+    padding:5px;
+    margin-top: 70px;
+}
+
+.sobre h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    color: whitesmoke;
+    text-align: justify;
+    text-shadow: 2px 2px #000000;
+}
+
+.sobre p {
+    font-size: 13pt;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: justify;
+    color: whitesmoke;
+    text-shadow: 2px 1.5px #000000;
+}
+
+/*Fim Formatação Inicio*/
+/*Formatação Serviços*/
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+    padding: 70px 0px 90px 20px;
+}
+
+.servicos-item {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    padding: 50px;
+    position: relative;
+    margin: 10px;
+}
+
+.servicos-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(60deg, #20262c80 10%, #769dc7 90%);
+    opacity: .3;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.servicos-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.imgicon1 {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.servicos-header{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    color: whitesmoke;
+    text-align: justify;
+    text-shadow: 2px 2px #000000;
+}
+
+
+.servicos-title h2 {
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fefefe;
+}
+
+.servicos-item h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #fefefe;
+    text-shadow: 2px 2px #2b2b2b;
+}
+
+.servicos-item p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+}
+
+.servicos-button {
+    background-color: #f8f8f87a; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.servicos-button a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    color: #000000;
+    text-shadow: 1px 1px 1px 2px #fefefe;
+}
+
+.servicos-button a:hover {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.servicos-button a::before {
+    transform:scaleX(0);
+    transform: bottom right;
+}
+
+.servicos-button {
+    position: relative;
+    inline-size: 30%;
+}
+
+
+/*Fim Formatação Serviços*/
+/*Formatação Contato*/
+.contato h2 {
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18pt;
+    color: whitesmoke;
+}
+
+.contato p {
+    height: 100%;;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    color: whitesmoke;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 30%;
+    background-color: #606060;
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+    background-color: #2b2b2b;
+    transition: .5s;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+textarea {
+    width: 50%px;
+    height: 120px;
+    line-height: 40px;
+    max-width: 1200px;
+    margin-top: 20px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 20px;
+    border: 1px solid black;
+}
+
+/* Fim Formatação Contato*/
+/*Footer*/
+footer {
+    border-top: 1px solid rgb(255, 255, 255);
+    margin-top: auto;
+    margin: auto;
+    display: flex;
+    bottom: auto;
+}
+
+footer .footer {
+    min-height: 200px;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: none;
+    overflow: hidden;
+}
+
+footer p {
+    display: center;
+    font-size: .9rem;
+    color: #fefefe;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+/*Fim Footer*/
