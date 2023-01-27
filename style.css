@@ -419,3 +419,32 @@ footer a {
 }
 
 /*Fim Footer*/
+
+/* Configurações gerais para dispositivos móveis */
+@media (max-width: 767px) {
+    /* Oculta o menu em dispositivos menores */
+    .menu {
+        display: none;
+    }
+    /* Centraliza o título do site */
+    .site-title {
+        text-align: center;
+    }
+    /* Redimensiona a imagem de logo */
+    .img-logo {
+        width: 50%;
+    }
+    /* Redimensiona o vídeo de fundo */
+    .video-bg {
+        width: 100%;
+    }
+    /* Redimensiona as imagens dos serviços */
+    .servicos-icon img {
+        width: 50%;
+    }
+    /* Centraliza os botões de orçamento */
+    .servicos-button {
+        text-align: center;
+    }
+}
+
